@@ -38,7 +38,12 @@
 
 
 
+<% if current_user.id == @car.user_id %>
 
 <%= link_to 'Edit', edit_car_path(@car) %> |
-<%= link_to 'Back', cars_path %> |
 <%= link_to "Delete", car_path(@car), method: :delete%>
+
+<% end %>
+
+
+<%= link_to 'Back', cars_path %> |

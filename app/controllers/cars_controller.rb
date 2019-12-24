@@ -11,6 +11,7 @@ class CarsController < ApplicationController
 
   def new
     @car = current_user.cars.new
+    ### {model:nil,year:nil,user_id:3}
   end
 
   def edit

@@ -1,5 +1,32 @@
 
-<%= render 'cars/form' %>
+<%# render 'cars/form' %>
+    <%= form_for @car, url:{action: "update"} do |f| %>
+    <%= f.label :make%>
+    <%= f.text_field :make%>
+
+    <%= f.label :model%>
+    <%= f.text_field :model%>
+
+    <%= f.label :year%>
+    <%= f.text_field :year%>
+
+    <%= f.label :mileage%>
+    <%= f.text_field :mileage%>
+
+    <%= f.label :color%>
+    <%= f.text_field :color%>
+
+    <%= f.label :img%>
+    <%= f.text_field :img%>
+
+    <%= f.label :phone%>
+    <%= f.text_field :phone%>
+
+    <%= f.submit "Update"%>
+
+<% end %>
+
+
 <%= link_to 'Previous', @car %> |
 <%= link_to 'Back to Main', cars_path %> |
 
