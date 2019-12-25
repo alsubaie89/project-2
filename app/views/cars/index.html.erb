@@ -8,13 +8,17 @@
   
      <% @cars.each do |car|%>
       <div class="col-4">
-      <%= link_to image_tag(car.img, :style => "width:250px; height:250px "), car_path(car) %>
+      <div class="img-thumbnail">
+      <%= link_to image_tag(car.img, :style => "width:340px; height:250px "), car_path(car) %>
       <br>
      
          <strong>Model:</strong>
       <%= car.model %>
+      </div>
       <br>
       <hr>
+      <br>
+      <br>
       </div>
    <%end%>
 

@@ -14,3 +14,25 @@
  *= require_self
  */
 
+ #bb {
+     background-color: var(--warning) !important;
+    
+}
+
+.container{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+   background-image: url(used.jpg) !important;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+
+}
+.abdul{
+    background-color: rgba(0, 0, 0, 0.425) !important
+}

@@ -2,7 +2,7 @@
 
 <div class="container">
 <h1>Cars Advertised</h1>
-<p id="notice"><%= notice %></p>
+
 
 <div class="row">
 <div class="col-12 d-flex flex-row justify-content-around ">
@@ -11,6 +11,8 @@
     </div>
     <div>
     <p>
+
+    <div class="img-thumbnail">
       <strong>Make:</strong>
       <%= @car.make %>
     </p>
@@ -39,6 +41,7 @@
     <strong>Contact on:</strong>
     <%= @car.phone %>
     </p>
+    </div>
 
     <% if current_user.id == @car.user_id %>
 
@@ -47,7 +50,7 @@
 
     <% end %>
 
-    <%= link_to 'Back', cars_path ,:class=> "btn btn-secondary" %> |
+    <%= link_to 'Back', cars_path ,:class=> "btn btn-secondary" %> 
     </div>
 
 </div>
