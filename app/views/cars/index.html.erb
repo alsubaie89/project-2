@@ -1,26 +1,42 @@
-<h1>hi hi cars indx</h1>
+
 
 
 <button> <%= link_to 'New', new_car_path(@car) %> </button><hr>
-<% @cars.each do |car|%>
-  <%= link_to image_tag(car.img, :style => "width:150px; height:150px "), car_path(car) %>
- 
-      <strong>Make:</strong>
-   <%= car.make %>
-      <strong>Model:</strong>
-   <%= car.model %>
-      <strong>Year:</strong>
-   <%= car.year %>
-      <strong>Color:</strong>
-   <%= car.color %>
-      <strong>Mileage:</strong>
-   <%= car.mileage %>
-   <strong>Contact on:</strong>
-   <%= car.phone %>
-   <br>
-   
-   <hr>
- <%end%>
 
+<div class="container">
+ <div class="row">
+  
+     <% @cars.each do |car|%>
+      <div class="col-4">
+      <%= link_to image_tag(car.img, :style => "width:300px; height:300px "), car_path(car) %>
+      <br>
+      <strong>Make:</strong>
+      <%= car.make %>
+      <br>
+         <strong>Model:</strong>
+      <%= car.model %>
+      <br>
+         <strong>Year:</strong>
+      <%= car.year %>
+      <br>
+         <strong>Color:</strong>
+      <%= car.color %>
+      <br>
+         <strong>Mileage:</strong>
+      <%= car.mileage %>
+      <br>
+      <strong>Contact on:</strong>
+      <%= car.phone %>
+      <br>
+      <hr>
+      </div>
+   <%end%>
+
+ </div>
+</div>
  
  
+
+
+ <footer class="container-fluid bg-4 text-center">
+ <p>hgfh hghjg <a href="####">contact us here</a> </p>

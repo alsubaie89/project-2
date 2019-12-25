@@ -1,49 +1,55 @@
-<h1>hi hi show</h1>
+
+
+<div class="container">
+<h1>Cars Advertised</h1>
 <p id="notice"><%= notice %></p>
 
+<div class="row">
+<div class="col-12 d-flex flex-row justify-content-around ">
+    <div>
+    <img src=<%= @car.img %> height=300 width=300> <br>
+    </div>
+    <div>
+    <p>
+      <strong>Make:</strong>
+      <%= @car.make %>
+    </p>
 
-<img src=<%= @car.img %> height=200 width=200> <br>
+    <p>
+      <strong>Model:</strong>
+      <%= @car.model %>
+    </p>
 
-<p>
-  <strong>Make:</strong>
-  <%= @car.make %>
-</p>
+    <p>
+      <strong>Year:</strong>
+      <%= @car.year %>
+    </p>
 
-<p>
-  <strong>Model:</strong>
-  <%= @car.model %>
-</p>
+    <p>
+      <strong>Color:</strong>
+      <%= @car.color %>
+    </p>
 
-<p>
-  <strong>Year:</strong>
-  <%= @car.year %>
-</p>
+    <p>
+      <strong>Mileage:</strong>
+      <%= @car.mileage %>
+    </p>
 
-<p>
-  <strong>Color:</strong>
-  <%= @car.color %>
-</p>
+    <p>
+    <strong>Contact on:</strong>
+    <%= @car.phone %>
+    </p>
 
-<p>
-  <strong>Mileage:</strong>
-  <%= @car.mileage %>
-</p>
+    <% if current_user.id == @car.user_id %>
 
-<p>
-<strong>Contact on:</strong>
-<%= @car.phone %>
-</p>
+    <%= link_to 'Edit', edit_car_path(@car) %> |
+    <%= link_to "Delete", car_path(@car), method: :delete , data: {confirm: "Confirm 'DELETE'?"}%> |
 
+    <% end %>
 
+    <%= link_to 'Back', cars_path %> |
+    </div>
 
-
-
-<% if current_user.id == @car.user_id %>
-
-<%= link_to 'Edit', edit_car_path(@car) %> |
-<%= link_to "Delete", car_path(@car), method: :delete%>
-
-<% end %>
-
-
-<%= link_to 'Back', cars_path %> |
+</div>
+</div>
+</div>

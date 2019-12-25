@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+ .container-fluid{
+     display: flexbox;
+     padding-top: 38px;
+     padding-bottom: 38px;
+    }
+
+ .my-bg-4{
+     background-color: black;
+     color: blanchedalmond;
+
+    }
+ footer{
+     border: black;
+     background-color: blue;
+ }
