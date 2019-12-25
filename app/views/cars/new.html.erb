@@ -1,33 +1,44 @@
 <h1> New Car</h1>
 
 <%# render 'cars/form' %>
-
 <%= form_for @car, url: {action:"create"} do |f|%>
+
+
+ <div class = "container">
+ <div class = "row">
+ <div class="col-12 d-flex flex-column align-items-center ">
+
+
     <%= f.label :make%>
     <%= f.text_field :make%>
+    <br>
 
     <%= f.label :model%>
     <%= f.text_field :model%>
-
+    <br>
     <%= f.label :year%>
     <%= f.text_field :year%>
-
+    <br>
     <%= f.label :mileage%>
     <%= f.text_field :mileage%>
+    <br>
 
     <%= f.label :color%>
     <%= f.text_field :color%>
-
+    <br>
     <%= f.label :img%>
     <%= f.text_field :img%>
-
+    <br>
     <%= f.label :phone%>
     <%= f.text_field :phone%>
-
-    <%= f.submit "Save" %>
-
-
+    <br>
+    <%= f.submit "Save",:class=> "btn btn-secondary" %>  <br>
+    <%= link_to 'Back', cars_path ,:class=> "btn btn-secondary" %><br>
+    <br>
 <%end%> 
 
+ </div>
+ </div>
+</div>
 
-<%= link_to 'Back', cars_path %>
+

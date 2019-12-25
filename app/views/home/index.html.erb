@@ -1,3 +1,20 @@
-<h1> Welcome to Used Car Sales  :)  </h1>
+<div class="container">
+ <div class="row">
+ 
+  
+     <% @cars.each do |car|%>
+      <div class="col-4">
+      <div class="img-thumbnail">
+      <%= link_to image_tag(car.img, :style => "width:250px; height:250px "), car_path(car) %>
+      </div>
+      <br>
+     
+         <strong>Model:</strong>
+      <%= car.model %>
+      <br>
+      <hr>
+      </div>
+   <%end%>
 
-<h2> <%= link_to 'Enter Here', cars_path %> </h2>
+ </div>
+</div>

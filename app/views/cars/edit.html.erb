@@ -1,32 +1,57 @@
 
 <%# render 'cars/form' %>
     <%= form_for @car, url:{action: "update"} do |f| %>
+    
+<div class = "container">
+<div class = "row">
+<div class="col-12 d-flex flex-column align-items-center ">
+
     <%= f.label :make%>
     <%= f.text_field :make%>
+    <br>
 
     <%= f.label :model%>
     <%= f.text_field :model%>
+    <br>
 
     <%= f.label :year%>
     <%= f.text_field :year%>
+    <br>
 
     <%= f.label :mileage%>
     <%= f.text_field :mileage%>
+    <br>
 
     <%= f.label :color%>
     <%= f.text_field :color%>
+    <br>
 
     <%= f.label :img%>
     <%= f.text_field :img%>
+    <br>
 
     <%= f.label :phone%>
     <%= f.text_field :phone%>
+    <br>
 
-    <%= f.submit "Update"%>
+    <%= f.submit "Update" ,:class=> "btn btn-secondary"%>
 
-<% end %>
+    <% end %>
 
+</div>
+</div>
+</div>
+<br>
+    
 
-<%= link_to 'Previous', @car %> |
-<%= link_to 'Back to Main', cars_path %> |
+<br>
+<div class="col-12 d-flex flex-column align-items-center " >
+<div class="btn-group" role="group" aria-label="Basic example">
+
+    <%= link_to 'Back', @car , :class=> "btn btn-secondary" %> |
+    <%= link_to 'Main-page', cars_path , :class=> "btn btn-secondary"%> 
+    </div>
+    </div>
+    <br>
+    <br>
 

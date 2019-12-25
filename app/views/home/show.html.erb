@@ -1,0 +1,25 @@
+<h4> My Advertisments  </h4>
+<div class="container">
+ <div class="row">
+ 
+  
+     <% @cars.each do |car|%>
+      <div class="col-4">
+      <%= link_to image_tag(car.img, :style => "width:150px; height:150px "), car_path(car) %>
+      <br>
+
+     
+         <strong>Model:</strong>
+         <%= car.model %>
+      <br>
+      
+        <strong>Make:</strong>
+      <%= car.make %>
+      <br>
+      <hr>
+      </div>
+   <%end%>
+
+ </div>
+</div>
+

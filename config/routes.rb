@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   root to: "home#index"
   resources :cars
+  get '/my-cars', to:'home#show', as: "my_cars" # my_cars_path
 end

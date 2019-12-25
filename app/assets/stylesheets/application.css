@@ -14,20 +14,17 @@
  *= require_self
  */
 
+h1, h2, h4{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-
- .container-fluid{
+ .container fluid{
      display: flexbox;
      padding-top: 38px;
      padding-bottom: 38px;
     }
 
- .my-bg-4{
-     background-color: black;
-     color: blanchedalmond;
+ 
+ 
 
-    }
- footer{
-     border: black;
-     background-color: blue;
- }
+ 
