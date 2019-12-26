@@ -1,10 +1,5 @@
 
 
-
-
-# ERD 
-# User ----< Cars
-
 # Used Car Sale project >
 my project is about a market for Used Car web application where every one can access, register, buy and sell a car.
 
@@ -29,12 +24,12 @@ for the rest design i decided to use CSS as mainly prototype and made few class 
 before i started my work wrote a diagram on a papper to get my idea and understand my logic so that everything would be clear to start my application
 # here is my wireframe 
 
-![wireframe](app\assets\images\erd1.png)
+![wireframe](erd1.png)
 
 
 # here is my ERD.
-
-![ERD](app\assets\images\erd1.png)
+# User ----< Cars
+![ERD](erd1.png)
 
 
 ## User stories:
